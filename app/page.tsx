@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -6,7 +7,6 @@ export default function Home() {
       <section className="bg-[#FBF8F4]">
         <div className="mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 md:grid-cols-2">
-            
             <div className="text-center md:text-left">
               <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-[#B88A5A]">
                 Afzal Marriage Bureau
@@ -14,9 +14,7 @@ export default function Home() {
 
               <h1 className="text-4xl font-bold leading-tight text-[#2A2420] sm:text-5xl lg:text-6xl">
                 Find Your
-                <span className="block text-[#6B3F2A]">
-                  Life Partner
-                </span>
+                <span className="block text-[#6B3F2A]">Life Partner</span>
               </h1>
 
               <p className="mx-auto mt-6 max-w-xl text-base leading-7 text-gray-600 md:mx-0">
@@ -30,14 +28,14 @@ export default function Home() {
                   type="button"
                   className="rounded-full bg-[#6B3F2A] px-8 py-4 text-sm font-semibold text-white shadow-lg hover:bg-[#573222]"
                 >
-                  Find Your Match
+                  <Link href="/profiles">Find Your Match</Link>
                 </button>
 
                 <button
                   type="button"
                   className="rounded-full border border-[#6B3F2A] bg-white px-8 py-4 text-sm font-semibold text-[#6B3F2A] hover:bg-[#6B3F2A] hover:text-white"
                 >
-                  Register Free
+                  <Link href="/register">Register Free</Link>
                 </button>
               </div>
 
@@ -78,7 +76,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
@@ -86,7 +83,6 @@ export default function Home() {
       {/* WHY CHOOSE US */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B88A5A]">
               Why Choose Us
@@ -97,13 +93,11 @@ export default function Home() {
             </h2>
 
             <p className="mt-4 text-gray-600">
-              We focus on trust, privacy and meaningful matrimonial
-              connections.
+              We focus on trust, privacy and meaningful matrimonial connections.
             </p>
           </div>
 
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
             <FeatureCard
               icon="✓"
               title="Verified Profiles"
@@ -127,7 +121,6 @@ export default function Home() {
               title="Personal Support"
               text="Our bureau is here to assist you throughout your journey."
             />
-
           </div>
         </div>
       </section>
@@ -135,7 +128,6 @@ export default function Home() {
       {/* HOW IT WORKS */}
       <section className="bg-[#FBF8F4] py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
           <div className="mx-auto max-w-2xl text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#B88A5A]">
               Simple Process
@@ -147,15 +139,29 @@ export default function Home() {
           </div>
 
           <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+            <Step
+              number="01"
+              title="Register Free"
+              text="Create your account completely free."
+            />
 
-            <Step number="01" title="Register Free" text="Create your account completely free." />
+            <Step
+              number="02"
+              title="Create Profile"
+              text="Tell us about yourself and your preferences."
+            />
 
-            <Step number="02" title="Create Profile" text="Tell us about yourself and your preferences." />
+            <Step
+              number="03"
+              title="Find Matches"
+              text="Browse profiles that match your preferences."
+            />
 
-            <Step number="03" title="Find Matches" text="Browse profiles that match your preferences." />
-
-            <Step number="04" title="Connect" text="Take the next step towards a meaningful relationship." />
-
+            <Step
+              number="04"
+              title="Connect"
+              text="Take the next step towards a meaningful relationship."
+            />
           </div>
         </div>
       </section>
@@ -163,9 +169,7 @@ export default function Home() {
       {/* MEMBERSHIP */}
       <section className="bg-white py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-
           <div className="rounded-[32px] bg-[#6B3F2A] p-8 text-center text-white shadow-xl sm:p-12 lg:p-16">
-
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#E7C9A8]">
               Membership
             </p>
@@ -182,18 +186,14 @@ export default function Home() {
 
             <div className="my-8">
               <span className="text-5xl font-bold">₹500</span>
-              <span className="ml-2 text-[#EBDDD3]">
-                / 6 months
-              </span>
+              <span className="ml-2 text-[#EBDDD3]">/ 6 months</span>
             </div>
 
             <div className="mx-auto grid max-w-2xl gap-3 text-left sm:grid-cols-2">
-
               <MembershipItem text="Full authorized profile details" />
               <MembershipItem text="Continue browsing and searching" />
               <MembershipItem text="Membership active for 6 months" />
               <MembershipItem text="Renewal after expiry" />
-
             </div>
 
             <button
@@ -202,7 +202,6 @@ export default function Home() {
             >
               View Membership
             </button>
-
           </div>
         </div>
       </section>
@@ -210,7 +209,6 @@ export default function Home() {
       {/* CTA */}
       <section className="bg-[#FBF8F4] py-20">
         <div className="mx-auto max-w-3xl px-4 text-center">
-
           <h2 className="text-3xl font-bold text-[#2A2420] sm:text-4xl lg:text-5xl">
             Ready to Begin Your Journey?
           </h2>
@@ -223,15 +221,13 @@ export default function Home() {
             type="button"
             className="mt-8 rounded-full bg-[#6B3F2A] px-8 py-4 text-sm font-semibold text-white shadow-md hover:bg-[#573222]"
           >
-            Create Free Profile
+            <Link href="/register">Create Free Profile</Link>
           </button>
-
         </div>
       </section>
     </main>
   );
 }
-
 
 function FeatureCard({
   icon,
@@ -244,23 +240,16 @@ function FeatureCard({
 }) {
   return (
     <div className="rounded-3xl border border-gray-100 bg-white p-7 text-center shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-
       <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-[#FBF8F4] text-xl text-[#6B3F2A]">
         {icon}
       </div>
 
-      <h3 className="mt-5 text-lg font-semibold text-[#2A2420]">
-        {title}
-      </h3>
+      <h3 className="mt-5 text-lg font-semibold text-[#2A2420]">{title}</h3>
 
-      <p className="mt-3 text-sm leading-6 text-gray-500">
-        {text}
-      </p>
-
+      <p className="mt-3 text-sm leading-6 text-gray-500">{text}</p>
     </div>
   );
 }
-
 
 function Step({
   number,
@@ -273,29 +262,20 @@ function Step({
 }) {
   return (
     <div className="text-center">
-
       <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#6B3F2A] text-sm font-bold text-white shadow-md">
         {number}
       </div>
 
-      <h3 className="mt-5 text-lg font-semibold text-[#2A2420]">
-        {title}
-      </h3>
+      <h3 className="mt-5 text-lg font-semibold text-[#2A2420]">{title}</h3>
 
       <p className="mx-auto mt-3 max-w-xs text-sm leading-6 text-gray-500">
         {text}
       </p>
-
     </div>
   );
 }
 
-
-function MembershipItem({
-  text,
-}: {
-  text: string;
-}) {
+function MembershipItem({ text }: { text: string }) {
   return (
     <div className="flex gap-3 rounded-xl bg-white/10 p-3 text-sm text-[#F5EAE2]">
       <span>✓</span>
@@ -303,4 +283,3 @@ function MembershipItem({
     </div>
   );
 }
-
